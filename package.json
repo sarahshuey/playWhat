@@ -5,8 +5,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.13",
-    "homepage": "https://sarahshuey.github.io/playWhat"
+    "react-scripts": "1.0.13"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +14,7 @@
     "eject": "react-scripts eject",
     "deploy" : "npm run build&&gh-pages -d build"
   },
+  "homepage": "https://sarahshuey.github.io/playWhat",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
