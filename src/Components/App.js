@@ -10,8 +10,10 @@ render(){
 return(
   <div className="App">
        <NavBar />
+       <div className="formandlist">
        <PlayListForm/>
        <PlayList/>
+       </div>
      </div>
 )
 }

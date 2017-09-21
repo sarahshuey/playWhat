@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PlayListItem from './PlayListItem'
+import '../Styles/App.css';
+
 
 
 class PlayList extends Component {
@@ -31,7 +33,7 @@ console.log("state", this.state.songs);
 render(){
   return(
     <div>
-    <button onClick={this.fetchData}>Update List</button>
+    <button className="button" onClick={this.fetchData}>Update List</button>
     <PlayListItem arr={this.state.songs}/>
 </div>
     )

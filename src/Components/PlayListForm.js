@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Styles/App.css';
 
 
 class PlayListForm extends Component {
@@ -60,23 +61,23 @@ handleNotes(e){
     return (
       <div>
       <form className="form" onSubmit={this.addToList}>
-      <label> User Name: </label>
+      <label className="formlabel"> User Name: </label>
       <br></br>
-       <input type='text' value={this.state.userName} onChange={this.handleName}></input>
+       <input className="forminput" type='text' value={this.state.userName} onChange={this.handleName}></input>
        <br></br>
-       <label> Artist Name: </label>
+       <label className="formlabel"> Artist Name: </label>
        <br></br>
-       <input type='text' value={this.state.songArtist}  onChange={this.handleArtist}></input>
+       <input className="forminput" type='text' value={this.state.songArtist}  onChange={this.handleArtist}></input>
        <br></br>
-       <label> Song Name: </label>
+       <label className="formlabel"> Song Name: </label>
        <br></br>
-       <input type='text' value={this.state.songTitle} onChange={this.handleTitle}></input>
+       <input className="forminput" type='text' value={this.state.songTitle} onChange={this.handleTitle}></input>
        <br></br>
-       <label> Notes: </label>
+       <label className="formlabel"> Notes: </label>
        <br></br>
-       <textarea value={this.state.songNotes} onChange={this.handleNotes}></textarea>
+       <textarea className="forminput" value={this.state.songNotes} onChange={this.handleNotes}></textarea>
        <br></br>
-       <input type = 'submit'></input>
+       <input className="submit" type = 'submit'></input>
          </form>
          </div>
     )
